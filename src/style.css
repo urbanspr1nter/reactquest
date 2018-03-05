@@ -1,0 +1,194 @@
+body {
+    font-family: 'Consolas', monospace;
+    background-color: #000000;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+h2 {
+    font-weight: 200;
+}
+
+h3 {
+    font-weight: 200;
+}
+
+.logo {
+    color: white;
+    margin-top: -2px;
+    margin-bottom: -1px;
+    font-weight: bold;
+}
+
+button {
+    width: 32px;
+    height: 32px;
+    background-color: #fafafa;
+    margin-left: 2px;
+}
+
+button:hover {
+    cursor:pointer;
+}
+
+button.arrow {
+    background-image: url('./assets/main/sword_small.png');
+}
+button.first-aid {
+    background-image: url('./assets/main/first_aid_small.png');
+}
+
+button.potion {
+    background-image: url('./assets/main/potion_small.png');
+}
+
+#console-data {
+    background-color: blue;
+    color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+    box-shadow: #dfdfdf 0 0 3px 3px;
+    padding: 8px;
+    font-family: 'Consolas', monospace;
+    letter-spacing: 2px;
+    font-weight: bold;
+    display: block;
+    overflow-y: scroll;
+    height: 350px;
+}
+
+#flash-overlay {
+    position: absolute;
+    width:816px;
+    height:816px;
+    margin-left: 32px;
+    background-color: #fafafa;
+    z-index: 11;
+    display:none;
+}
+
+div.level-map {
+    width: 816px;
+    height: 816px;
+    box-shadow: #dfdfdf 6px 6px 0px 0px;
+    border: 3px solid white;
+}
+
+div.level-map:hover {
+    cursor: crosshair;
+}
+
+div.level-map.selecting:hover {
+    cursor: crosshair;
+}
+
+#lose-screen {
+    background-color: black ;
+    color: #fafafa;
+    display: none;
+}
+
+#win-screen {
+    background-color: mediumseagreen;
+    color: #fafafa;
+}
+
+#main-map {
+    background-image: url('assets/main/grass.png');
+}
+
+#building-interior {
+    background: linear-gradient(270deg, #e4c9ff, #5f3f7f);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+div.player {
+    z-index: 10;
+    position: absolute;
+}
+
+div.item {
+    z-index: 1;
+}
+
+#gold-mount {
+    font-weight: bold;
+    color: darkgoldenrod;
+    background-color: white;
+    font-size: large;
+    padding-left: 4px;
+}
+
+#hud-mount {
+    color: white;
+    background-color: blue;
+    padding: 8px;
+    font-size: medium;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+    box-shadow: #dfdfdf 0 0 3px 3px;
+    margin-bottom: 8px;
+}
+
+#gameplay {
+    margin-top: 8px;
+    padding-top: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    color: white;
+    background-color: blue;
+    font-size: medium;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+    box-shadow: #dfdfdf 0 0 3px 3px;
+    height: 148px;
+}
+
+.monster:hover {
+    cursor: crosshair;
+}
+
+div.npc-dialog-container {
+    background-color: rgba(100, 20, 200, 0.45);
+    opacity: 0.8;
+    min-width: 86%;
+    min-height: 69px;
+    display: inline-block;
+    z-index: 3;
+    border: 2px solid gold;
+    color: gold;
+    padding: 16px;
+    margin-top: -115px;
+    margin-left: 8px;
+    word-break: break-all;
+    -webkit-text-stroke: 0.5px black;
+    font-weight: bold;
+    font-size: large;
+}
